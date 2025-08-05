@@ -12,7 +12,7 @@ export const auth = defineAuth({
         {
           name: "SSOProvider",
           clientId: secret("SSOSecret"),
-          clientSecret: secret("FEDERATE_SECRET"),
+          clientSecret: secret("SSOSecret"),
           issuerUrl: "https://issuer-url.example.com",
           attributeMapping: {
             email: "EMAIL",
